@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header img {
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Rounded corners */
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: blue; /* Active link color */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px; /* Thickness of glowing effect */
+  background: blue; /* Glow color */
+  transition: width 0.3s ease, left 0.3s ease; /* Animation for the glow */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0; /* Move to the left */
+}
+
+.nav-link:hover {
+  color: blue; /* Color change on hover */
+}

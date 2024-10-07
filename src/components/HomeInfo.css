@@ -1,0 +1,125 @@
+.home-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh; /* Full height for centering */
+  text-align: center;
+  padding: 20px;
+}
+
+.highlight {
+  color: #ff6347; /* Highlight color for the name */
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 2rem; /* Larger size for emphasis */
+}
+
+.highlight:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  color: #00ff99; /* Change color on hover */
+}
+
+.subtitle {
+  font-style: italic; /* Style for the subtitle */
+  opacity: 0.8; /* Slightly faded */
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  animation: fadeIn 0.5s ease;
+}
+
+.neo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff; 
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.neo-btn:hover {
+  background: whitesmoke;
+  transform: scale(1.05); 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards; 
+}
+.info-box {
+  background: whitesmoke; 
+  border-radius: 10px; 
+  padding: 2rem; 
+  margin-top: 1rem; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  animation: fadeIn 0.5s ease forwards; 
+}
+
+.highlight-text {
+  color: #ff6347;
+  font-size: 1.8rem; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.highlight-text:hover {
+  transform: scale(1.05); 
+  color: #00ff99; 
+}
+
+.neo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent; /* No background by default */
+  color: #ffffff; /* White text for button */
+  font-weight: bold; /* Text boldness */
+  text-decoration: none; /* No underline */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.neo-btn:hover {
+  background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional class for fading in elements */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
